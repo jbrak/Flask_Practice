@@ -1,6 +1,6 @@
 # Flask_Practice
 
-Repository about Experementing with the Flask web-framwork.
+Repository about Experimenting with the Flask Web-Framework.
 
 ## Tutorials:
 
