@@ -8,7 +8,8 @@ Repository about Experimenting with the Flask Web-Framework.
 
 - https://flask.palletsprojects.com/en/1.1.x
 
-##Activate / Deactivate the python virtual environment
+## Activate/Deactivate the python virtual environment
 
-`source venv/bin/activate` to activate the environment
-`deactivate` to exit the environment
+- `source venv/bin/activate` to activate the environment
+
+- `deactivate` to exit the environment
