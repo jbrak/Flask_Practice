@@ -4,4 +4,4 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template(index.html, title = "Weather Data", temp = 22)
+    return render_template('index.html', title = 'Weather Data', temp = 22)
