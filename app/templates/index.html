@@ -1,15 +1,20 @@
 <html>
-  <head>
+
+  <body>
+    {% extends "base.html" %}
+
+    {% block content %}
+
     {% if title %}
     <h1> {{title}} </h1>
     {% else %}
     <h1> Welcome to the Weather </h1>
     {% endif %}
-  </head>
 
-  <body>
     {% for temp in temp %}
     <div><p> Temperature at {{temp.time}} : <b>{{temp.temp}}</b> </p></div>
     {% endfor %}
+
+    {% endblock %}
   </body>
 </html>

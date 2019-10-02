@@ -12,4 +12,4 @@ def index():
       'time' : '9:00'}
     ]
 
-    return render_template('index.html',temp = temp)
+    return render_template('index.html',title = 'Bransgore' ,temp = temp)
