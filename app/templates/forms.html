@@ -1,0 +1,26 @@
+<html>
+
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Enter Data</h1>
+  {{ form.hidden_tag() }}
+  <form action = "" method="post" novalidate>
+
+    <p>
+      {{ form.date.label }}<br>
+      {{form.date(size = 32)}}
+    </p>
+
+    <p>
+      {{form.temp.label}}<br>
+      {{form.temp(size = 32)}}
+    </p>
+
+    <p> {{ form.submit() }} </p>
+
+
+  </form>
+{% endblock %}
+
+</html>

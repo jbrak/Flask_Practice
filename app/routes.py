@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+from app.forms import SubmitData
 
 @app.route('/')
 @app.route('/index')
@@ -13,3 +14,9 @@ def index():
     ]
 
     return render_template('index.html',title = 'Bransgore' ,temp = temp)
+
+
+@app.route('/form')
+def form():
+    form = SubmitData()
+    return render_template('forms.html', form =form )
