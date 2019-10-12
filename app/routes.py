@@ -21,5 +21,5 @@ def form():
     form = SubmitData()
     if form.validate_on_submit() :
         flash('date{}, temp{}'.format(forms.temp.data,forms.date.data))
-        return redirect('/indes')
+        return redirect('/index')
     return render_template('forms.html', form =form )
