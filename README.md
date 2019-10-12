@@ -13,3 +13,7 @@ Repository about Experimenting with the Flask Web-Framework.
 - `source venv/bin/activate` to activate the environment
 
 - `deactivate` to exit the environment
+
+## Things to dependencies to install on the virtual environment
+
+- pip install flask-wtf
