@@ -16,7 +16,10 @@ def index():
     return render_template('index.html',title = 'Bransgore' ,temp = temp)
 
 
-@app.route('/form')
+@app.route('/form', methods = ['GET', 'POST'])
 def form():
     form = SubmitData()
+    if form.validate_on_submit() :
+        flash('date{}, temp{}'.format(forms.temp.data,forms.date.data))
+        return redirect('/forms')
     return render_template('forms.html', form =form )
