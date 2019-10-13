@@ -17,3 +17,4 @@ Repository about Experimenting with the Flask Web-Framework.
 ## Things to dependencies to install on the virtual environment
 
 - pip install flask-wtf
+- pip install flask-sqlalchemy
