@@ -38,10 +38,11 @@ SQLite Studio can be installed from [here](https://sqlitestudio.pl/index.rvt).
 ```
 from app import db
 from app.models import Data
+from datetime import datetime()
 
 #Sample writing Data
 db.session.rollback()
-d = Data(date = datetime.datetime(12,12,12,12,12,12), temp = 32.3)
+d = Data(date = datetime(12,12,12,12,12,12), temp = 32.3)
 db.session.add(d)
 db.session.commit()
 
