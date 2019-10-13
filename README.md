@@ -32,3 +32,19 @@ sqlite3
 `.help` at the sqlite command line shows all of the commands and `.quit` exits the SQL command line tool.
 
 SQLite Studio can be installed from [here](https://sqlitestudio.pl/index.rvt).
+
+## Database Session commands
+
+```
+from app import db
+from app.models import Data
+
+#Sample writing Data
+d = Data(date = datetime.datetime(12,12,12,12,12,12), temp = 32.3)
+db.session.add(d)
+db.session.commit()
+
+# To see the data
+data = Data.query.all()
+data
+```
