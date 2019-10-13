@@ -40,6 +40,7 @@ from app import db
 from app.models import Data
 
 #Sample writing Data
+db.session.rollback()
 d = Data(date = datetime.datetime(12,12,12,12,12,12), temp = 32.3)
 db.session.add(d)
 db.session.commit()
