@@ -8,12 +8,6 @@ from app.models import Data
 @app.route('/index')
 def index():
     temp = db.session.query(Data).all()
-    # temp = [
-    # {'temp' : '20',
-    # 'time' : '8:30'},
-    #  {'temp' : '24',
-    #   'time' : '9:00'}
-    # ]
 
     return render_template('index.html',title = 'Bransgore' ,temp = temp)
 
