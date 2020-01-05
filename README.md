@@ -17,9 +17,10 @@ Repository about Experimenting with the Flask Web-Framework.
 
 ## Things to dependencies to install on the virtual environment
 
-- `pip install flask-wtf`
-- `pip install flask-sqlalchemy`
-- `pip install flask-migrate`
+- `pip3 install flask-wtf`
+- `pip3 install flask-sqlalchemy`
+- `pip3 install flask-migrate`
+- `pip3 install Flask-APScheduler`
 
 ## Access the sqlite command line on the Mac
 
