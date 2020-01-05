@@ -18,8 +18,8 @@ from random import random
 import atexit
 scheduler = BackgroundScheduler()
 
+#writing Data
 def write():
-    #Sample writing Data
     db.session.rollback()
     d = Data(date = datetime.now(), temp = (random()*100))
     db.session.add(d)
