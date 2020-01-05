@@ -14,18 +14,21 @@ migrate = Migrate(app, db)
 #Scheduler
 from app.models import Data
 from datetime import datetime
-
+from random import random
+import atexit
 scheduler = BackgroundScheduler()
 
 def write():
     #Sample writing Data
     db.session.rollback()
-    d = Data(date = datetime.now(), temp = 333.8)
+    d = Data(date = datetime.now(), temp = (random()*100))
     db.session.add(d)
     db.session.commit()
 
 
 scheduler.add_job(func=write, trigger="interval", seconds = 5)
 scheduler.start()
+
+atexit.register(lambda: scheduler.shutdown())
 
 from app import routes, models
