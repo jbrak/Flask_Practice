@@ -14,14 +14,17 @@ migrate = Migrate(app, db)
 #Scheduler
 from app.models import Data
 from datetime import datetime
+from time import time
 from random import random
 import atexit
+from Sensor/Temp_function import t
+
 scheduler = BackgroundScheduler()
 
 #writing Data
 def write():
     db.session.rollback()
-    d = Data(date = datetime.now(), temp = (random()*100))
+    d = Data(date = time(), temp = t())
     db.session.add(d)
     db.session.commit()
 
