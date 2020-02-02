@@ -10,6 +10,7 @@ Repository about Experimenting with the Flask Web-Framework.
 
 
 ## Activate/Deactivate the python virtual environment
+- `python3 -m venv venv` to create the environment
 
 - `source venv/bin/activate` to activate the environment
 
