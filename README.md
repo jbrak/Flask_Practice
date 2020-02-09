@@ -8,6 +8,8 @@ Repository about Experimenting with the Flask Web-Framework.
 
 - https://flask.palletsprojects.com/en/1.1.x
 
+- https://www.raspberrypi-spy.co.uk/2018/02/enable-1-wire-interface-raspberry-pi/
+
 
 ## Activate/Deactivate the python virtual environment
 - `python3 -m venv venv` to create the environment
