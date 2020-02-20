@@ -12,6 +12,8 @@ Repository about Experimenting with the Flask Web-Framework.
 
 - https://thepihut.com/blogs/raspberry-pi-tutorials/ds18b20-one-wire-digital-temperature-sensor-and-the-raspberry-pi
 
+- https://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/
+
 
 ## Activate/Deactivate the python virtual environment
 - `python3 -m venv venv` to create the environment
